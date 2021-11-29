@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Electricity Bill Generation  </title>
+    
+    <link rel="text/sylesheet" href="styles/style.css">
+    <script type="text/javascript" src="scripts/main.js" ></script>
+</head>
+<body>
+    <div id="homediv">
+        <h1>ELECTRICITY BILL GENERATION</h1>
+        <h2>Click any one of the buttons</h2>
+        <button onclick="Newuser()">New User</button>
+        <button onclick="Login()">Login</button>
+        <button onclick="Admin()">Admin</button>
+    </div><br>
+    <div id="userlogindiv">
+        <h1>New User Login </h1>
+        <input id="name" placeholder="Enter your name">
+        <input id="phone" placeholder="Enter your phone number">
+        <input id="address" placeholder="Enter your address">
+        <button onclick="Add()">Add</button>
+    </div><br>
+    <div id="Adminlogindiv">
+        <h1>Admin Login</h1>
+        <input id="userid" placeholder="User ID">
+        <button onclick="Adminlogin()">Login</button>
+    </div><br>
+    <div id="Existinguserlogindiv">
+        <h1>User Login</h1>
+        <input id="userid" placeholder="User ID">
+        <button onclick="Userlogin()">Login</button>
+    </div><br>
+    <div id="Existingpagediv">
+        <h1>Existing User</h1>
+        <button onclick="Showhistory()">Show History</button>
+        <button onclick="Paybills()">Pay Bills</button>
+    </div><br>
+    <div id="Showhistorydiv">
+        <table>
+            <tr>
+                <th>Date</th>   
+                <td id="1"></td>             
+            </tr>
+            <tr>
+                <th>ID</th>
+                <td id="2"></td> 
+            </tr>
+            <tr>
+                <th>Units</th>
+                <td id="3"></td> 
+            </tr>
+            <tr>
+                <th>Amount</th>
+                <td id="4"></td> 
+            </tr>
+        </table>
+    </div>
+    <div id="Paybilldiv">
+        <label id="display"></label>
+        <button onclick="pay()">pay</button>
+    </div>
+    <div id="Adminpage"> 
+        <h1>Admin Page</h1>
+        <input id="dateofbill"placeholder="enter the date of bill">
+        <input id="units" placeholder="units">
+        <button onclick="AddUnits()">Add</button>
+    </div><br>
+
+</body>
+</html>
